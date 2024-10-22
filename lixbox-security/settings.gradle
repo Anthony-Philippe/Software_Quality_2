@@ -1,0 +1,9 @@
+rootProject.name = 'lixbox-security'
+
+/** Projet importé */
+include 'lixbox-certificat'
+include 'lixbox-certificat-parser'
+
+include 'lixbox-crypto'
+
+include 'lixbox-keycloak'

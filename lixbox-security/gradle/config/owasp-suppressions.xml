@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suppressions xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.3.xsd">
+<!-- Alerte portant sur la top librairie mais pas sur celle-ci -->
+<suppress>
+   <notes><![CDATA[
+   file name: apache-mime4j-core-0.8.8.jar
+   ]]></notes>
+   <packageUrl regex="true">^pkg:maven/org\.apache\.james/apache\-mime4j\-core@.*$</packageUrl>
+   <cpe>cpe:/a:apache:james</cpe>
+</suppress>
+<suppress>
+   <notes><![CDATA[
+   file name: apache-mime4j-dom-0.8.8.jar
+   ]]></notes>
+   <packageUrl regex="true">^pkg:maven/org\.apache\.james/apache\-mime4j\-dom@.*$</packageUrl>
+   <cpe>cpe:/a:apache:james</cpe>
+</suppress>
+<suppress>
+   <notes><![CDATA[
+   file name: apache-mime4j-storage-0.8.8.jar
+   ]]></notes>
+   <packageUrl regex="true">^pkg:maven/org\.apache\.james/apache\-mime4j\-storage@.*$</packageUrl>
+   <cpe>cpe:/a:apache:james</cpe>
+</suppress>
+<suppress>
+   <notes><![CDATA[
+   file name: apache-mime4j-storage-0.8.8.jar
+   ]]></notes>
+   <packageUrl regex="true">^pkg:maven/org\.apache\.james/apache\-mime4j\-storage@.*$</packageUrl>
+   <cpe>cpe:/a:storage_project:storage</cpe>
+</suppress>
+<suppress>
+   <notes><![CDATA[
+   file name: apache-mime4j-dom-0.8.8.jar
+   ]]></notes>
+   <packageUrl regex="true">^pkg:maven/org\.apache\.james/apache\-mime4j\-dom@.*$</packageUrl>
+   <cpe>cpe:/a:jdom:jdom</cpe>
+</suppress>
+<suppress>
+   <notes><![CDATA[
+   file name: microprofile-config-api-2.0.1.jar
+   ]]></notes>
+   <packageUrl regex="true">^pkg:maven/org\.eclipse\.microprofile\.config/microprofile\-config\-api@.*$</packageUrl>
+   <cpe>cpe:/a:config_file_provider_project:config_file_provider</cpe>
+</suppress>
+<suppress>
+   <notes><![CDATA[
+   file name: microprofile-config-api-2.0.1.jar
+   ]]></notes>
+   <packageUrl regex="true">^pkg:maven/org\.eclipse\.microprofile\.config/microprofile\-config\-api@.*$</packageUrl>
+   <cpe>cpe:/a:eclipse:eclipse_ide</cpe>
+</suppress>
+<suppress>
+   <notes><![CDATA[
+   file name: microprofile-config-api-2.0.1.jar
+   ]]></notes>
+   <packageUrl regex="true">^pkg:maven/org\.eclipse\.microprofile\.config/microprofile\-config\-api@.*$</packageUrl>
+   <cpe>cpe:/a:payara:payara</cpe>
+</suppress>
+
+
+<!-- Mauvaise détection -> association d'une mauvaise librairie -->
+<suppress>
+   <notes><![CDATA[
+   file name: asyncutil-0.1.0.jar
+   ]]></notes>
+   <packageUrl regex="true">^pkg:maven/com\.ibm\.async/asyncutil@.*$</packageUrl>
+   <cpe>cpe:/a:async_project:async</cpe>
+</suppress>
+</suppressions>
